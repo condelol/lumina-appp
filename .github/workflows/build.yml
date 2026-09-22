@@ -1,4 +1,4 @@
-yaml
+YAML
 name: Compilar APK Lumina
 
 on:
@@ -9,8 +9,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
 
       - name: Configurar Python
         uses: actions/setup-python@v5
