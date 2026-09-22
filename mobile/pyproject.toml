@@ -1,0 +1,12 @@
+[project]
+name = "lumina-app"
+version = "0.1.0"
+description = "App móvil Lumina"
+dependencies = [
+    "flet",
+    "tinytuya"
+]
+requires-python = ">=3.10"
+
+[tool.flet]
+app = "main.py"
